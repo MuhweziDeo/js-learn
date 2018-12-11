@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 class App extends React.Component{
   render(){
+    var name='dee';
 return (
-<h1>Hello</h1>
+
+<h1>Hello {name}</h1>
 );
 }
 
