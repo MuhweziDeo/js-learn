@@ -25,6 +25,15 @@ class App extends Component{
   };
   render(){
     var name='dee';
+    removeCharacter=index=>{
+        const {characters}=this.state;
+        this.setState({
+            characters:characters.filter((character,i)=>{
+                return i!==index;
+            }
+            )
+        })
+    }
    
 return (
 <div className="container">
