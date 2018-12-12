@@ -16,6 +16,10 @@ class App extends Component{
         )
     })
 };
+
+handleSubmit = character => {
+    this.setState({characters: [...this.state.characters, character]});
+};
   render(){
     var name='dee';
    
@@ -25,8 +29,9 @@ return (
 <h1>Hello {name}</h1>
 <Table characterData={this.state.characters}
         removeCharacter={this.removeCharacter}
+        handleSubmit={this.handleSubmit}
 />
-
+<Form/>
 </div>
 
 );

@@ -9,7 +9,7 @@ class Form extends Component{
            name:'',
            job:''
        };
-       this.this=this.initialState;
+       this.state=this.initialState;
 
    }
 
@@ -19,7 +19,13 @@ class Form extends Component{
     this.setState({
         [name] : value
     });
+
+  
 };
+    submitForm = () => {
+    this.props.handleSubmit(this.state);
+    this.setState(this.initialState);
+}
 render() {
     const { name, job } = this.state; 
 
@@ -30,13 +36,14 @@ render() {
                 type="text" 
                 name="name" 
                 value={name} 
-                onChange={this.handleChange} />
+                onChange={this.handleChange}/>
             <label>Job</label>
             <input 
                 type="text" 
                 name="job" 
                 value={job} 
                 onChange={this.handleChange}/>
+                <input  type="button" value="submit" onClick={this.submitForm}/>
         </form>
     );
 };
