@@ -23,6 +23,7 @@ class App extends Component {
         </header>
         <Greet/>
         <Welcome/>
+        <button className="btn btn-danger btn-lg p-4">Read More</button>
       </div>
       
     );
