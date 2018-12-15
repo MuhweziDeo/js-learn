@@ -21,7 +21,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Greet/>
+        <Greet name="dee"/>
+        <Greet name='deo'/>
+        <Greet name='aggreys'/>
         <Welcome/>
         <button className="btn btn-danger btn-lg p-4">Read More</button>
       </div>
