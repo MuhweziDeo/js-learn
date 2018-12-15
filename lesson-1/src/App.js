@@ -24,7 +24,7 @@ class App extends Component {
         <Greet name="dee"/>
         <Greet name='deo'/>
         <Greet name='aggreys'/>
-        <Welcome/>
+        <Welcome name='test-1'/>
         <button className="btn btn-danger btn-lg p-4">Read More</button>
       </div>
       
